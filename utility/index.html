@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+
+    <title>Belajar Tailwind</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+    </style>
+    <script>
+        module.exports = {
+            theme: {
+                extend: {
+                    spacing: {
+                        13: '3.5rem',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter'],
+                    },
+                    colors: {
+                        mycolor: '#121063',
+                        kopi: '#ff77e9'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 class="text-8xl font-bold text-center my-10">Belajar <span
+            class="bg-gradient-to-tr from-indigo-800 to-yellow-500 bg-clip-text text-transparent">TailwindCSS</span>
+    </h1>
+
+    <section class="mb-7 bg-indigo-300">
+        <h2 class="text-3xl text-center">Spacing</h2>
+
+        <div class="m-4 bg-green-400">Margin</div>
+        <div class="py-8 bg-yellow-300">Padding</div>
+    </section>
+
+    <!-- warna gradient -->
+    <section class="mb-7 bg-indigo-300 bg-gradient-to-r from-red-700 via-slate-600 to-blue-500">
+        <h2 class="text-3xl text-center py-32">Colors</h2>
+    </section>
+
+    <section class="mb-10 bg-red-400">
+        <h2 class="text-3xl text-center">Sizing</h2>
+        <div class="w-1/2 h-32 bg-kopi">Kotak 1</div>
+        <!-- <div class="max-w-xs min-h-screen">Kotak 2</div> -->
+    </section>
+
+    <section class="mb-96 font-inter max-w-3xl mx-auto">
+        <h2 class="mb-4 text-xl font-bold">Belajar Tailwind Typography</h2>
+        <div class="mb-4 text-lg text-gray-500">By. <a href="" class="font-semibold text-blue-600">Dimas Chronicles</a>,
+            12 Juli 2022</div>
+        <p class="mb-4">Lorem ipsum dolor sit amet <a href="#" class="underline font-semibold">consectetur</a>
+            adipisicing elit. Reprehenderit
+            ratione laboriosam expedita ipsa
+            voluptatum aspernatur quae laudantium officiis cumque voluptatibus aliquam, exercitationem cupiditate error
+            doloremque assumenda maiores id, perspiciatis voluptates quibusdam molestias culpa sapiente ipsam dolor cum.
+            Veritatis dolorem, dignissimos facere corporis deserunt aperiam! Iste velit totam quod voluptates cumque..
+        </p>
+        <blockquote class="mb-4 italic font-thin text-xl">"Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Reiciendis,
+            eius."
+        </blockquote>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore vero eos expedita
+            molestias culpa
+            numquam et alias dolorem ut consectetur quibusdam harum eveniet, iusto, aut nisi illum sunt corrupti?</p>
+    </section>
+
+</body>
+
+</html>
