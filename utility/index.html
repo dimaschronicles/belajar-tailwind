@@ -32,6 +32,16 @@
                     colors: {
                         mycolor: '#121063',
                         kopi: '#ff77e9'
+                    },
+                    animation: {
+                        'spin-slow': 'spin 3s linear infinite',
+                        'goyang': 'goyang 1s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        goyang: {
+                            '0%, 100%': { transform: 'rotate(-3deg)' },
+                            '50%': { transform: 'rotate(3deg)' },
+                        }
                     }
                 }
             }
@@ -39,7 +49,7 @@
     </script>
 </head>
 
-<body class="dark:bg-slate-800 dark:text-slate-200">
+<body>
     <h1 class="text-8xl font-bold text-center my-10">Belajar <span
             class="bg-gradient-to-tr from-indigo-800 to-yellow-500 bg-clip-text text-transparent">TailwindCSS</span>
     </h1>
@@ -152,6 +162,22 @@
                 <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible">Email tidak valid</p>
             </label>
         </form>
+    </div>
+
+    <hr class="my-20" />
+
+    <div
+        class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:scale-75 hover:rotate-45 transition hover:bg-pink-600 origin-top-left">
+    </div>
+
+    <div class="w-40 h-40 mx-auto mt-20 group">
+        <div
+            class="w-full h-full bg-sky-600 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000 delay-100">
+        </div>
+    </div>
+
+    <div class="w-40 h-40 mt-20 bg-purple-700 mx-auto rounded-lg shadow-lg animate-goyang">
+
     </div>
 
     <div class="mb-96"></div>
